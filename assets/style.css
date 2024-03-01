@@ -10,6 +10,7 @@
     text-decoration: none;
     box-sizing: border-box;
     font-family: "Noto Sans", sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root{
