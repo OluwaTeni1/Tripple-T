@@ -1,0 +1,59 @@
+:root {
+    --color1: rgb(61, 12, 17);
+    --color2: rgb(216, 0, 50);
+    --color3: rgb(247, 140, 162);
+    --color4: rgb(249, 222, 201);
+}
+
+.service-home{
+    background: linear-gradient(to right, var(--color2), var(--color4));
+    height: 60vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.service-head{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    -ms-transform: translate(-50%, -10%);
+    transform: translate(-50%, -10%);
+}
+.service-head h2{
+    color: var(--color4);
+    font-size: 2.65rem;
+}
+
+.service-head p{
+    color: rgba(74, 0, 0, 0.8758);
+    font-size: 1.205rem;
+}
+
+.service-head-02{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 180px;
+    width: 95%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-box h3{
+    font-size: 20px;
+    color: var(--color2);
+}
+
+.service-box select{
+    padding: 3px;
+    background: transparent;
+    color: var(--color1);
+    font-size: 16px;
+    border: 1px solid var(--color1);
+}
+
+.service-box select option{
+    background: none;
+}
