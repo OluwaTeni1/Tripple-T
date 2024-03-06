@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cakes|Tripple-T Bites</title>
     <link rel="icon" type="image/x-icon" href="/assets/images/logo-1.png">
-    <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="assets/services.css">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -53,7 +53,7 @@
                     <li><a href="smallchops.html" target="_blank">Small Chops</a></li>
                     <li><a href="parfait.html" target="_blank">Parfait</a></li>
                     <li><a href="contact.html" target="_blank">Contact</a></li>
-                    <li><a href="cart.html" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><i class="fa-solid fa-cart-shopping"  id="cart-icon"></i></a></li>
                 </ul>
                 <div class="cart">
     
@@ -74,6 +74,25 @@
 
     </section>
 
+    <section class="cart">
+            <div class="cart-box">
+                <div class="cart-head">
+                    <h2>Your Cart</h2>
+                    <div class="cart-close" id="close-cart"><i class="fa-solid fa-x"></i></div>
+                </div>
+                <div class="cart-cont-main">
+                
+                </div>
+                <div class="cart-total">
+                    <div class="total">Total Price</div>
+                    <div class="total-price">$0.00</div>
+                    
+                </div>
+                <button class="btn-buy">Buy Now</button>
+            </div>
+    </section>
+
+
 <section class="body">
     <div class="container">
         <div class="service-body">
@@ -81,131 +100,70 @@
                 <div class="service-box">
                     <h3>Our Best Cakes</h3>
                 </div>
-                <div class="service-box">
-                    <select name="Sort" id="Sort">
-                        <option>Default Sorting</option>
-                        <option>Sort by price</option>
-                        <option>Sort by popularity</option>
-                        <option>Sort by rating</option>
-                        <option>Sort by sale</option>
-                    </select>
-                </div>
             </div>
             <div class="main-02">
                 <div class="card-02">
             
-                    <div class="img-02">
-                        <img src="assets/image/wedding-02.jpg" alt="">
-                    </div>
-                    <a href="product-details.html">
-                        <p class="product-decr">Wedding cake</p>
-                    </a>
+                        <img src="assets/image/wedding-02.jpg" alt="" class="product-img">
+                    <p class="product-decr">Wedding cake</p>
                     <p class="price">$13.00</p>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
                 </div>
                 <div class="card-02">
-                    <div class="img-02">
-                        <img src="assets/image/wedding-03.jpg" alt="">
-                    </div>
-                    <a href="#">
+                        <img src="assets/image/wedding-03.jpg" alt="" class="product-img">
                         <p class="product-decr">Wedding cake</p>
-                    </a>
-                    <p class="price">$12.00</p>
+                        <p class="price">$12.00</p>
+                        <i class="fa-solid fa-cart-shopping add-cart"></i>
                 </div>
                 <div class="card-02">
-                    <div class="img-02">
-                        <img src="assets/image/wedding-04.jpg" alt="">
-                    </div>
-                    <a href="#">
+                    
+                        <img src="assets/image/wedding-04.jpg" alt="" class="product-img">
+                    
                         <p class="product-decr">Wedding cake</p>
-                    </a>
-                    <p class="price">$14.00</p>
+                        <p class="price">$14.00</p>
+                        <i class="fa-solid fa-cart-shopping add-cart"></i>
                 </div>
                 <div class="card-02">
-                    <div class="img-02">
-                        <img src="assets/image/wedding.jpg" alt="">
-                    </div>
-                    <a href="#">
+                    
+                        <img src="assets/image/wedding.jpg" alt="" class="product-img">
+        
                         <p class="product-decr">Wedding cake</p>
-                    </a>
                     <p class="price">$50.00</p>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
                 </div>
                 <div class="card-02">
-                    <div class="img-02">
-                        <img src="assets/image/wedding-05.jpg" alt="">
-                    </div>
-                    <a href="#">
+                        <img src="assets/image/wedding-05.jpg" alt="" class="product-img">
                         <p class="product-decr">Wedding cake</p>
-                    </a>
                     <p class="price">$20.00</p>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
                 </div>
                 <div class="card-02">
-                    <div class="img-02">
-                        <img src="assets/image/wedding-06.jpeg" alt="">
-                    </div>
-                    <a href="#">
+                        <img src="assets/image/wedding-06.jpeg" alt="" class="product-img">
                         <p class="product-decr">Wedding cake</p>
-                    </a>
                     <p class="price">$15.00</p>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
                 </div>
                 <div class="card-02">
-                    <div class="img-02">
-                        <img src="assets/image/wedding.jpg" alt="">
-                    </div>
-                    <a href="#">
+                        <img src="assets/image/wedding.jpg" alt="" class="product-img">
                         <p class="product-decr">Wedding cake</p>
-                    </a>
                     <p class="price">$50.00</p>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
                 </div>
                 <div class="card-02">
-                    <div class="img-02">
-                        <img src="assets/image/wedding-05.jpg" alt="">
-                    </div>
-                    <a href="#">
+                        <img src="assets/image/wedding-05.jpg" alt="" class="product-img">
+                    
                         <p class="product-decr">Wedding cake</p>
-                    </a>
                     <p class="price">$20.00</p>
-                </div>
-                <div class="card-02">
-                    <div class="img-02">
-                        <img src="assets/image/wedding-06.jpeg" alt="">
-                    </div>
-                    <a href="#">
-                        <p class="product-decr">Wedding cake</p>
-                    </a>
-                    <p class="price">$15.00</p>
-                </div>
-                <div class="card-02">
-                    <div class="img-02">
-                        <img src="assets/image/wedding.jpg" alt="">
-                    </div>
-                    <a href="#">
-                        <p class="product-decr">Wedding cake</p>
-                    </a>
-                    <p class="price">$50.00</p>
-                </div>
-                <div class="card-02">
-                    <div class="img-02">
-                        <img src="assets/image/wedding-05.jpg" alt="">
-                    </div>
-                    <a href="#">
-                        <p class="product-decr">Wedding cake</p>
-                    </a>
-                    <p class="price">$20.00</p>
-                </div>
-                <div class="card-02">
-                    <div class="img-02">
-                        <img src="assets/image/wedding-06.jpeg" alt="">
-                    </div>
-                    <a href="#">
-                        <p class="product-decr">Wedding cake</p>
-                    </a>
-                    <p class="price">$15.00</p>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
                 </div>
             </div>
 
         </div>
     </div>
 </section>
+
+<script src="js/main.js"></script>
+
 
     <footer>
         <div class="container">

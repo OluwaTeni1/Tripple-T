@@ -156,6 +156,7 @@ input[type="checkbox"] {
 @media (max-width: 1192px) {
     nav .menu-btn i {
         display: block;
+        margin-left: 120px;
     }
 
     #click:checked~.menu-btn i:before {
@@ -453,7 +454,7 @@ section.pg-1{
     flex-wrap: wrap;
     width: 100%;
     flex: 1 1 200px;
-    gap: 1.5rem;
+    gap: 3.5rem;
     padding: 1rem 0 0.5rem;
     justify-content: space-around;
     align-items: center;
@@ -463,22 +464,31 @@ section.pg-1{
 }
 
 .card-02 {
-    width: 280px;
+    width: 250px;
     margin-left: auto;
     margin-right: auto;
-    height: 480px;
+    height: 420px;
     box-sizing: border-box;
     background: rgb(255, 255, 255);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
     padding: 0px;
+    transition: 0.2s all ease;
 }
-
+.card-02:hover{
+    margin-bottom: 15px;
+}
 .img-02 {
     margin: 0px;
-    height: 380px;
+    height: 285px;
     width: 100%;
     background: #fff;
     border: none;
+}
+
+.product-decr span{
+    color: #555;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 .img-02 img {
@@ -497,28 +507,34 @@ section.pg-1{
 .product-decr {
     font-family: 'Cambria', serif;
     text-align: center;
-    margin-top: 15px;
-    line-height: 25px;
-    font-size: 22px;
-    color: var(--color3);
-    padding: 10px;
-    font-weight: 600;
-    transition: 0.3s all linear;
-}
-
-.product-decr:hover {
+    margin-top: 7px;
+    font-size: 18px;
     color: var(--color2);
+    padding: 8px;
+    font-weight: 600;
 }
 
 .price {
     font-family: 'Cambria', serif;
     text-align: center;
     line-height: 25px;
-    font-size: 18px;
+    font-size: 17px;
     color: var(--color1);
-    font-weight: 400;
+    font-weight: 500;
 }
 
+.rating{
+    margin-top: 9px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.rating i{
+    font-size: 18px;
+    color: var(--color2);
+}
 
 /*---pg-3----*/
 .pg-03{
