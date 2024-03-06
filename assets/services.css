@@ -168,6 +168,7 @@ input[type="checkbox"] {
 @media (max-width: 1192px) {
     nav .menu-btn i {
         display: block;
+        margin-left: 120px;
     }
 
     #click:checked~.menu-btn i:before {
