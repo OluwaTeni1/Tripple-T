@@ -72,7 +72,6 @@
 header {
     position: fixed;
     width: 100%;
-    background: var(--color1);
     z-index: 1000;
 }
 
@@ -91,12 +90,16 @@ header {
 nav {
     display: flex;
     height: 80px;
-    width: 100%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 50px 0 100px;
+    background: var(--color1);
     flex-wrap: wrap;
     z-index: 1000;
+    border-radius: 50px;
 }
 
 nav .logo {
@@ -145,6 +148,7 @@ nav .menu-btn i {
     font-size: 22px;
     cursor: pointer;
     display: none;
+    right:  0;
 }
 
 input[type="checkbox"] {
@@ -166,7 +170,11 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 1192px) {
-    nav .menu-btn i {
+    nav {
+        width: 75%;
+    }
+
+    /*nav .menu-btn i {
         display: block;
         margin-left: 120px;
     }
@@ -174,7 +182,7 @@ input[type="checkbox"] {
     #click:checked~.menu-btn i:before {
         content: "\f00d";
     }
-
+    
     nav ul {
         position: fixed;
         z-index: 1000;
@@ -213,9 +221,42 @@ input[type="checkbox"] {
     nav ul li a:hover {
         background: none;
         color: var(--color1);
+    }*/
+}
+
+@media (max-width: 750px) {
+    nav {
+        width: 85%;
+        padding: 0 17px 0 33.5px;
+    }
+
+    nav .logo {
+        width: 28.5px;
+        height: 34.5px;
+    }
+
+    nav ul li {
+        margin: 0 2.5px;
+    }
+
+    nav ul li a,
+    nav ul li i {
+        font-size: 15px;
+        font-weight: 500;
+        padding: 2px 3.25px;
+        border-radius: 15px;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
     }
 }
 
+@media (max-width: 450px) {
+    nav {
+        width: 100%;
+        padding: 0 12.5px 0 25px;
+    }
+}
 .content {
     position: absolute;
     top: 50%;
@@ -445,7 +486,7 @@ p.normal {
     text-align: center;
     margin-top: 15px;
     line-height: 25px;
-    font-size: 22px;
+    font-size: 18px;
     color: var(--color2);
     padding: 10px;
     font-weight: 600;
@@ -467,9 +508,9 @@ p.normal {
 
 
 .cart-box{
-    width: 340px;
+    width: 300px;
     position: fixed;
-    top: 7.35rem;
+    top: 2.5rem;
     right: -100%;
     margin: none;
     padding: 0;
@@ -518,8 +559,8 @@ p.normal {
 }
 
 img.cart-img{
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     object-fit: contain;
     object-position: center;
     padding: 2px;
@@ -534,13 +575,13 @@ img.cart-img{
 }
 
 .cart-title{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     color: var(--color3);
 }
 
 .cart-price{
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 400;
     color: #333;
 }
