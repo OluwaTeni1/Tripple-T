@@ -262,7 +262,7 @@ input[type="checkbox"] {
 
 footer{
     bottom: 0;
-    background: var(--color1);
+    background: var(--color2);
     position: relative;
     width: 100%;
     padding: 30px;
