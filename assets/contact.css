@@ -23,7 +23,7 @@
 .header-1 {
     position: sticky;
     width: 100%;
-    background: rgb(0, 0, 0);
+    background: rgb(71, 71, 71);
 }
 
 .head-1 {
@@ -72,7 +72,7 @@
 header {
     position: fixed;
     width: 100%;
-    
+    background: var(--color1);
     z-index: 1000;
 }
 
@@ -94,16 +94,14 @@ section.contact-form{
 nav {
     display: flex;
     height: 80px;
-    width: 60%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0 50px 0 100px;
-    background: var(--color1);
     flex-wrap: wrap;
     z-index: 1000;
-    border-radius: 50px;
 }
 
 nav .logo {
@@ -148,7 +146,7 @@ nav ul li i:hover {
 
 
 nav .menu-btn i {
-    color: #fff;
+    color: var(--color4);
     font-size: 22px;
     cursor: pointer;
     display: none;
@@ -160,29 +158,9 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 1192px) {
-    nav {
-        padding: 0 40px 0 50px;
-    }
-
-    .container {
-        width: 90%;
-    }
-
-    .container-nav {
-        width: 95%;
-    }
-}
-
-@media (max-width: 800px) {
-    nav .menu-btn i {
-        margin-left: 150px;
-    }
-}
-
-@media (max-width: 1192px) {
     nav .menu-btn i {
         display: block;
-        margin-left: 550px;
+        margin-left: 120px;
     }
 
     #click:checked~.menu-btn i:before {
@@ -227,6 +205,40 @@ input[type="checkbox"] {
     nav ul li a:hover {
         background: none;
         color: var(--color1);
+    }
+}
+
+@media (max-width: 750px) {
+    nav {
+        width: 85%;
+        padding: 0 17px 0 33.5px;
+    }
+
+    nav .logo {
+        width: 28.5px;
+        height: 34.5px;
+    }
+
+    nav ul li {
+        margin: 0 2.5px;
+    }
+
+    nav ul li a,
+    nav ul li i {
+        font-size: 18px;
+        font-weight: 500;
+        padding: 12px 15.25px;
+        border-radius: 15px;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+}
+
+@media (max-width: 450px) {
+    nav {
+        width: 100%;
+        padding: 0 12.5px 0 25px;
     }
 }
 

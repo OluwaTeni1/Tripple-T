@@ -23,7 +23,7 @@
 .header-1 {
     position: sticky;
     width: 100%;
-    background: rgb(0, 0, 0);
+    background: rgb(71, 71, 71);
 }
 
 .head-1 {
@@ -72,6 +72,7 @@
 header {
     position: fixed;
     width: 100%;
+    background: var(--color1);
     z-index: 1000;
 }
 
@@ -90,16 +91,14 @@ header {
 nav {
     display: flex;
     height: 80px;
-    width: 60%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0 50px 0 100px;
-    background: var(--color1);
     flex-wrap: wrap;
     z-index: 1000;
-    border-radius: 50px;
 }
 
 nav .logo {
@@ -144,7 +143,7 @@ nav ul li i:hover {
 
 
 nav .menu-btn i {
-    color: #fff;
+    color: var(--color4);
     font-size: 22px;
     cursor: pointer;
     display: none;
@@ -156,7 +155,7 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 1192px) {
-    nav {
+    /*nav {
         padding: 0 40px 0 50px;
     }
 
@@ -166,15 +165,11 @@ input[type="checkbox"] {
 
     .container-nav {
         width: 95%;
-    }
+    }*/
 }
 
 @media (max-width: 1192px) {
-    nav {
-        width: 75%;
-    }
-
-    /*nav .menu-btn i {
+    nav .menu-btn i {
         display: block;
         margin-left: 120px;
     }
@@ -221,7 +216,7 @@ input[type="checkbox"] {
     nav ul li a:hover {
         background: none;
         color: var(--color1);
-    }*/
+    }
 }
 
 @media (max-width: 750px) {
@@ -241,9 +236,9 @@ input[type="checkbox"] {
 
     nav ul li a,
     nav ul li i {
-        font-size: 15px;
+        font-size: 18px;
         font-weight: 500;
-        padding: 2px 3.25px;
+        padding: 12px 15.25px;
         border-radius: 15px;
         letter-spacing: 0.5px;
         cursor: pointer;
@@ -415,6 +410,7 @@ p.normal {
 }
 
 .service-box h3{
+    margin-left: 2rem;
     margin-top: 5rem;
     font-size: 20px;
     color: var(--color2);
@@ -435,7 +431,7 @@ p.normal {
 .main-02 {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
     flex: 1 1 200px;
     gap: 1.5rem;
     padding: 1rem 0 0.5rem;
@@ -506,15 +502,18 @@ p.normal {
     font-weight: 400;
 }
 
+#cart-icon {
+    cursor: pointer;
+}
 
-.cart-box{
+.cart-box {
     width: 300px;
     position: fixed;
     top: 2.5rem;
     right: -100%;
     margin: none;
     padding: 0;
-    background-color: #fff;
+    background-color: #ffffff;
     height: 80vh;
     overflow: scroll;
     scrollbar-width: none;
@@ -523,10 +522,11 @@ p.normal {
     transition: 0.3s;
 }
 
-.cart-box.active{
+.cart-box.active {
     right: 0;
 }
-.cart-head{
+
+.cart-head {
     color: var(--color4);
     background-color: var(--color2);
     padding: 10px 20px 10px 20px;
@@ -535,19 +535,19 @@ p.normal {
     justify-content: space-between;
 }
 
-.cart-head h2{
+.cart-head h2 {
     font-size: 22px;
     color: #fff;
     font-weight: 600;
 }
 
-.cart-head #close-cart i{
+.cart-head #close-cart i {
     font-size: 17px;
     color: #fff;
     cursor: pointer;
 }
 
-.cart-content{
+.cart-content {
     margin-top: 5px;
     padding: 10px;
     width: 100%;
@@ -558,7 +558,7 @@ p.normal {
     margin-right: auto;
 }
 
-img.cart-img{
+img.cart-img {
     width: 70px;
     height: 70px;
     object-fit: contain;
@@ -568,24 +568,25 @@ img.cart-img{
     border-radius: 50%;
 }
 
-.cart-texts{
+.cart-texts {
     display: grid;
     row-gap: 5px;
     padding: 5px;
 }
 
-.cart-title{
+.cart-title {
     font-size: 14px;
     font-weight: 600;
     color: var(--color3);
 }
 
-.cart-price{
+.cart-price {
     font-size: 15px;
     font-weight: 400;
     color: #333;
 }
-input.quantity{
+
+input.quantity {
     width: 2.5rem;
     border: 1px solid var(--color2);
     outline-color: var(--color2);
@@ -594,13 +595,23 @@ input.quantity{
     padding: 2px;
 }
 
+.add-cart {
+    font-size: 20px;
+    color: var(--color2);
+    cursor: pointer;
+}
+
 .cart-remove {
     font-size: 18px;
     color: var(--color2);
     cursor: pointer;
 }
-
-.cart-total{
+.cart-add{
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 5px;
+}
+.cart-total {
     padding: 10px;
     width: 80%;
     margin-left: auto;
@@ -611,34 +622,36 @@ input.quantity{
     border-top: 1px solid #333;
 }
 
-.total{
+.total {
     font-size: 1.2rem;
     font-weight: 700;
     color: #000;
-    padding-right: 10px;
+    padding-right: 20px;
     align-items: center;
 }
-.total-price{
+
+.total-price {
     font-size: 1.095rem;
     font-weight: 500;
     color: #000;
 }
-.btn-buy{
+
+.btn-buy {
     margin: 1.5rem auto 0 auto;
     font-size: 18px;
     display: flex;
     padding: 5px 10px 10px 10px;
     border: none;
-    background: var(--color2);
-    color: var(--color4);
+    background: #ff523b;
+    color: #fff;
     border-radius: 3px;
     cursor: pointer;
     transition: 0.25s all linear;
     margin-bottom: 12px;
 }
 
-.btn-buy:hover{
-    background: var(--color4);
-    color: var(--color2);
-    border: 1px solid var(--color2);
+.btn-buy:hover {
+    background: #fff;
+    color: #ff523b;
+    border: 1px solid #ff523b;
 }
