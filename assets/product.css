@@ -1,0 +1,148 @@
+:root {
+    --color1: rgb(80, 13, 19);
+    --color2: rgb(216, 0, 50);
+    --color3: rgb(247, 140, 162);
+    --color4: rgb(249, 222, 201);
+}
+
+.single-product{
+    margin-top: 150px;
+    width: 100%;
+}
+
+.row{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 300px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    gap: 0;
+    align-items: center;
+}
+
+.single-product .col-1, 
+.single-product .col{
+    padding: 20px;
+    width: 400px;
+}
+.col-1{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    max-height: 800px;
+}
+
+.small-img{
+    cursor: pointer;
+}
+
+.col-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.col-1 .small-row{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.col p{
+    font-size: 16px;
+    line-height: 30px;
+    color: rgb(120, 120, 120);
+    padding-bottom: 10px;
+}
+
+.col h2{
+    font-size: clamp(20px, 3vw, 80px);
+    color: var(--color2);
+    padding-bottom: 15px;
+    font-weight: 900;
+}
+
+.col h3{
+    color: var(--color3);
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.col select{
+    width: 180px;
+    margin-right: 20px;
+    height: 40px;
+    padding: 10px;
+    color: var(--color1);
+    background: none;
+    border: 1px solid var(--color1);
+    margin-bottom: 20px;
+}
+
+.col input{
+    width: 45px;
+    height: 45px;
+    background: none;
+    color: var(--color1);
+    border: 1px solid var(--color1);
+    padding: 5px;
+}
+
+.col a{
+    background: var(--color1);
+    color: var(--color4);
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 50px;
+    margin-left: 15px;
+    font-weight: 500;
+    transition: 0.25s all;
+}
+
+.col a:hover{
+    background: var(--color3);
+    color: var(--color1);
+}
+
+.col h4{
+    padding-top: 16px;
+    color: #000000;
+    padding-right: 15px;
+    border-radius: 50px;
+}
+
+.col h4 i{
+    color: var(--color3);
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.row-2{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    gap: 1.5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row-2 h2{
+    font-size: 20px;
+    color: var(--color2);
+}
+
+.row-2 a{
+    color: var(--color3);
+    font-size: 18px;
+}
+
+.row-2 a:hover{
+    color: var(--color3);
+    opacity: 0.5;
+}

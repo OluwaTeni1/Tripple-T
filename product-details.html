@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripple-T Bites/Products</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo-1.png">
+    <link rel="stylesheet" href="assets/product.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+</body>
+
+</html><header>
+    <div class="header-1">
+        <div class="container-nav">
+            <div class="head-1">
+                <div class="fast">
+                    <p>Fast and Reliable...</p>
+                </div>
+                <div class="right">
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                    <div class="icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="assets/image/logo-1.png" alt=""></a>
+
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a class="" href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><i class="fa-solid fa-cart-shopping" id="cart-icon"></i></a></li>
+            </ul>
+            <div class="cart">
+
+            </div>
+        </nav>
+</header>
+
+<section>
+    <div class="container">
+        <div class="single-product">
+            <div class="row">
+                <div class="col-1">
+                    <img src="assets/image/cake7.jpg" alt="" width="100%" id="productImg">
+                    <div class="small-row">
+                        <div >
+                            <img src="assets/image/cake11.jpg" alt="" width="100%" id="smallImg" class="small-img">
+                        </div>
+                        <div >
+                            <img src="assets/image/cake12.jpg" alt="" width="100%" id="smallImg" class="small-img">
+                        </div>
+                        <div >
+                            <img src="assets/image/cake13.jpg" alt="" width="100%" id="smallImg" class="small-img">
+                        </div>
+                        <div >
+                            <img src="assets/image/cake15.jpg" alt="" width="100%" id="smallImg" class="small-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <p>Cake / Wedding Cake</p>
+                    <h2>Big Wedding Cake</h2>
+                    <h3>$30</h3>
+                    <select name="" id="">
+                        <option value="">Select Size</option>
+                        <option value="">XXL</option>
+                        <option value="">XL</option>
+                        <option value="">Large</option>
+                        <option value="">Medium</option>
+                        <option value="">Small</option>
+                    </select>
+                    <br>
+                    
+                    
+
+                    <h4>Product Details <i class="fa-solid fa-indent"></i></h4>
+                    <br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus natus tempore quia doloremque consectetur, fugiat, quae explicabo molestiae saepe,
+                        aliquid id placeat repellat officia accusamus numquam temporibus nostrum corrupti itaque?
+                    Enim, asperiores nemo illo voluptate provident tempora atque
+                    dolorum, nostrum dolor, sunt quos rem quo error magni.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="related">
+    <div class="container">
+        <div class="row-2">
+            <h2>Related Products</h2>
+            <a href="products.html">View More</a>
+        </div>
+    </div>
+</section>
+
+<section class="other">
+    <div class="container">
+        <div class="main-02">
+            <div class="card-02">
+                <div class="img-02">
+                    <img src="assets/image/wedding-03.jpg" alt="" >
+                </div>
+                <a href="#">
+                    <p class="product-decr">Wedding cake</p>
+                </a>
+                <p class="price">$12.00</p>
+            </div>
+            <div class="card-02">
+                <div class="img-02">
+                    <img src="assets/image/wedding-04.jpg" alt="">
+                </div>
+                <a href="#">
+                    <p class="product-decr">Wedding cake</p>
+                </a>
+                <p class="price">$14.00</p>
+            </div>
+            <div class="card-02">
+                <div class="img-02">
+                    <img src="assets/image/wedding.jpg" alt="">
+                </div>
+                <a href="#">
+                    <p class="product-decr">Wedding cake</p>
+                </a>
+                <p class="price">$50.00</p>
+            </div>
+            <div class="card-02">
+                <div class="img-02">
+                    <img src="assets/image/wedding.jpg" alt="">
+                </div>
+                <a href="#">
+                    <p class="product-decr">Wedding cake</p>
+                </a>
+                <p class="price">$50.00</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    var productImg = document.getElementById("productImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+    SmallImg[0].onclick = function () {
+        productImg.src = SmallImg[0].src;
+    }
+
+
+    SmallImg[1].onclick = function () {
+        productImg.src = SmallImg[1].src;
+    }
+
+
+    SmallImg[2].onclick = function () {
+        productImg.src = SmallImg[2].src;
+    }
+
+
+    SmallImg[3].onclick = function () {
+        productImg.src = SmallImg[3].src;
+    }
+
+
+</script>
+
+<footer>
+    <div class="container">
+        <div class="footer">
+            <div class="foot-main">
+                <div class="foot-box">
+                    <p class="bold">Download Our App</p>
+                    <p class="normal">Download App for Androud and ios mobile phone</p>
+                    <div class="foot-img">
+                        <img src="assets/image/play-store.png" alt="">
+                        <img src="assets/image/app-store.png" alt="">
+                    </div>
+                </div>
+
+                <div class="foot-box">
+                    <div class="foot-logo">
+                        <img src="assets/image/logo-1.png" alt="">
+                    </div>
+                    <p class="normal">Our purpose is to sustainably make the pleasure
+                        and benefits of sports accesible to the many</p>
+                </div>
+
+                <div class="foot-box">
+                    <div class="social-media">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <p>Copyright &#169; Tripple-T Cakes and Confectioneries</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+

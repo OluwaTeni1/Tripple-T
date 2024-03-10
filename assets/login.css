@@ -25,118 +25,192 @@
     background: url(image/bggg.jpg) no-repeat;
 }
 
-.body{
+.body {
+    display: grid;
+    margin-top: 5rem;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-size: cover;
-        background-position: center;
+    place-items: center;
+    margin-bottom: 2rem;
 }
 
-
-.wrapper{
-    width: 420px;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.26);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    color: var(--color2);
-    border-radius: 10px;
-    padding: 30px 40px;
+.login-container {
+    background: #fff;
+    max-width: 400px;
+    width: 100%;
+    padding: 10px 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-
-.wrapper h1{
+.login-container form .title {
     font-size: 30px;
+    font-weight: 700;
+    margin: 20px 0 10px 0;
+    position: relative;
+    color: #563434;
+}
+
+.login-container form .input-box {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.login-container form .input-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 18px;
+    outline: none;
+}
+
+.login-container form .underline::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    bottom: 0;
+}
+
+.login-container form .underline::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #ffe9e6;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease;
+}
+
+.login-container form .input-box input:focus~.underline::after,
+.login-container form .input-box input:valid~.underline::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.login-container form .button {
+    margin: 40px 0 20px 0;
+}
+
+.login-container .input-box input[type="submit"] {
+    background: #563434;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container .input-box input[type="submit"]:hover {
+    background: #fff;
+    color: #563434;
+    transition: 0.5s all linear;
+    border: 1px solid #563434;
+}
+
+.login-container .option {
+    font-size: 0.95rem;
     text-align: center;
 }
 
-.wrapper .input-box{
-    position: relative;
-    width: 100%;
+.login-container .option div {
+    display: flex;
+    align-items: center;
+}
+
+.option a {
+    font-size: 0.85rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-left: 5px;
+    color: #ff523b;
+    ;
+}
+
+.login-container .google a,
+.login-container .twitter a,
+.login-container .facebook a {
+    display: block;
     height: 50px;
-    margin: 30px 0;
-}
-
-.input-box input{
     width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid var(--color2);
-    border-radius: 40px;
-    font-size: 16px;
-    color: var(--color2);
-    padding: 20px 45px 20px 20px;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 20px;
+    line-height: 50px;
+    color: #eee;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
-.input-box input::placeholder{
-    color: var(--color2);
-}
-
-.input-box i{
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+.login-container .google i,
+.login-container .twitter i,
+.login-container .facebook i {
+    padding-right: 12px;
     font-size: 20px;
 }
 
-.wrapper .remember-forgot{
-    display: flex;
-    justify-content: space-between;
-    font-size: 14.5px;
-    margin: -15px 0 15px;
+.login-container .google a {
+    background: #ff523b;
+    margin: 20px 0 15px 0;
 }
 
-.remember-forgot label .remember{
-    accent-color: #000000;
-    margin-right: 3px;
-    border: #000000;
+.login-container .google a:hover {
+    background: #780e00;
+    color: #ffffff;
+    transition: all 0.5s ease;
 }
 
-.remember-forgot a{
-    color: var(--color2);
-    text-decoration: none;
+.login-container .twitter a {
+    background: #ff523b;
+    margin: 20px 0 15px 0;
 }
 
-.remember-forgot a:hover{
-    text-decoration: underline;
+.login-container .twitter a:hover {
+    background: #780e00;
+    color: #ffffff;
+    transition: all 0.5s ease;
 }
 
-.wrapper .btn-02{
-    width: 100%;
-    height: 45px;
-    background: var(--color2);
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    font-size: 16px;
-    color: #e4e4e4;
-    font-weight: 600;
-    transition: .25s ease;
-}
-.wrapper .btn-02:hover{
-    background: var(--color3);
+.login-container .facebook a {
+    background: #ff523b;
+    margin: 20px 0 15px 0;
 }
 
-.wrapper .register-link {
-    font-size: 14.5px;
-    text-align: center;
-    margin: 20px 0 15px;
+.login-container .facebook a:hover {
+    background: #780e00;
+    color: #ffffff;
+    transition: all 0.5s ease;
 }
 
-.register-link p a {
-    color: var(--color2);
-    text-decoration: none;
-    font-weight: 600;
+@media(max-width: 540px) {
+    .login-container {
+        max-width: 400px;
+        width: 90%;
+    }
 }
 
-.register-link p a:hover{
-    text-decoration: underline;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

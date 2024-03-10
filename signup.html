@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up |Tripple-T Bites</title>
-    <link rel="icon" type="image/x-icon" href="/assets/images/logo-1.png">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo-1.png">
+    
     <link rel="stylesheet" href="assets/signup.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -47,7 +47,7 @@
                     <i class="fas fa-bars"></i>
                 </label>
                 <ul>
-                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a class="" href="index.html">Home</a></li>
                     <li><a href="products.html">Products</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="about.html">About Us</a></li>
@@ -58,49 +58,72 @@
             </nav>
     </header>
 
-    <section class="login">
-        <div class="container">
-            <div class="body">
-                <div class="wrapper">
-                    <form action="">
-                        <h1>Sign Up</h1>
-                        <div class="input-box">
-                            <input type="text" placeholder="Full Name" required>
-                            <i class="fa-solid fa-user"></i>
+    <section class="signup">
+        <div class="body-02">
+            <div class="regis-container">
+                <div class="title">Sign Up</div>
+                <div class="content-02">
+                    <form action="#">
+                        <div class="user-details">
+                            <div class="input-box">
+                                <span class="details">Full Name</span>
+                                <input type="text" placeholder="Enter your name" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Username</span>
+                                <input type="text" placeholder="Enter your username" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Email</span>
+                                <input type="text" placeholder="Enter your email" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Phone Number</span>
+                                <input type="text" placeholder="Enter your number" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Password</span>
+                                <input type="text" placeholder="Enter your password" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Confirm Password</span>
+                                <input type="text" placeholder="Confirm your password" required>
+                            </div>
                         </div>
-                        <div class="input-box">
-                            <input type="email" placeholder="Email" required>
-                            <i class="fa-solid fa-user"></i>
+                        <div class="gender-details">
+                            <input type="radio" name="gender" id="dot-1">
+                            <input type="radio" name="gender" id="dot-2">
+                            <input type="radio" name="gender" id="dot-3">
+                            <span class="gender-title">Gender</span>
+                            <div class="category">
+                                <label for="dot-1">
+                                    <span class="dot one"></span>
+                                    <span class="gender">Male</span>
+                                </label>
+                                <label for="dot-2">
+                                    <span class="dot two"></span>
+                                    <span class="gender">Female</span>
+                                </label>
+                                <label for="dot-3">
+                                    <span class="dot three"></span>
+                                    <span class="gender">Prefer not to say</span>
+                                </label>
+                            </div>
                         </div>
-                        <div class="input-box">
-                            <input type="password" placeholder="Password" required>
-                            <i class="fa-solid fa-lock"></i>
+                        <div class="button">
+                            <input type="submit" value="Sign Up">
                         </div>
-                        <div class="input-box">
-                            <input type="password" placeholder="Confirm Password" required>
-                            <i class="fa-solid fa-lock"></i>
-                        </div>
-                        <div class="remember-forgot">
-                            <label for="">
-                                <input type="checkbox" class="remember">
-                            </label>
-                            
-                        </div>
-    
-                        <button type="submit" class="btn-02">Sign UP</button>
-    
-                        <div class="register-link">
-                            <p>Already have an account?
-                                <a href="login.html" class="regis">Login</a>
-                            </p>
-                        </div>
+        
                     </form>
                 </div>
+                <div class="option">Already have an account?<a href="login.html">Login</a></div>
             </div>
         </div>
-    
+
     </section>
 
+
+    
     <footer>
         <div class="container">
             <div class="footer">
